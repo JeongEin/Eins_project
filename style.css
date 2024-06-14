@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+a, a:link, a:visited{
+    color:inherit;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 1140px;
+    margin:0 auto;
+}
+header{
+    position:absolute;
+    color:black;
+    top:0;
+    z-index:1;
+    width: 97%;
+    padding:1rem;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    padding: 10px;
+}
+
+button:hover{
+    color:forestgreen
+}
+
+
+header button{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+header h1 button{
+    font-size: 2rem;
+    font-weight: bold;
+}
+header nav ul li button{
+    font-size: 1.2rem;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    color: black;
+    background: linear-gradient(rgba(0,0,0,0.8) rgba(0,0,0,0.8)), url() center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main h4{
+    font-size: 2rem;
+}
+main h2{
+    font-size: 3.5rem;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+}
+main p{
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+main button.download{
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding:1rem 2rem;
+    margin-top: 3rem;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+main button.mouse{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: upDown 1s ease-in-out infinite;
+    cursor: pointer;
+}
+@keyframes upDown {
+    0%{
+        bottom: 1rem;
+    }
+    50%{
+        bottom: 1.5rem;
+    }
+    100%{
+        bottom: 1rem;
+    }
+}
+main h2 span::after{
+    content: "";
+    height: 40px;
+    width: 3px;
+    background-color: #fff;
+    display: inline-block;
+    animation: blink 7s ease-in-out infinite;
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.color{
+    color: rgb(11, 136, 0);
+}
+.title{
+    animation: changing 5s infinite;
+}
+
+@keyframes changing{
+    0%{
+        color:black
+    }
+    25%{
+        color:green;
+    }
+    50%{
+        color:lawngreen;
+    }
+    75%{
+        color:green;
+    }
+    100%{
+        color:black;
+    }
+}
+/*section 1*/
+section{
+    font-family:"Poppins", sans-serif;
+    padding:5rem 0;
+}
+section:nth-child(2n){
+    background-color: #f8f8f8;
+}
+section .title{
+    margin-bottom:3rem;
+}
+section .title h4{
+    font-size: 1.35rem;
+    color:black;
+    position:relative;
+}
+section .title h2{
+    font-size:3.5rem;
+}
+section .title p{
+    font-size: 1.15rem;
+}
+section .about-self::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+section .about-self .left{
+    width: 50%;
+    float:left;
+}
+section .about-self .left img{
+    max-width: 95%;
+}
+section .about-self .right{
+    width: 50%;
+    float: left;
+
+}
+section .about-self .right h3{
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+section .about-self .right h3 strong{
+    color:#1E4B96;
+}
+section .about-self .right p{
+    font-size: 1.15rem;
+    margin:1rem 0;
+}
+section .about-self .right .social a{
+    font-size: 2.5rem;
+    margin-right: 0.2rem;
+}
+/*section 1 end*/
+
+section .do-me::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+section .do-me .do-inner{
+    background-color: #fff;
+    width: 24%;
+    padding: 2rem;
+    float: left;
+    margin-right: 5%;
+    cursor: pointer;
+}
+section .do-me .do-inner:last-child{
+    margin-right: 0;
+}
+
+section .do-me .do-inner .icon i{
+    font-size: 2.5rem;
+    color: rgb(20, 132, 0);
+}
+
+section .do-me .do-inner .content h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+section .do-me .do-inner .content p {
+    font: 1.15rem;
+}
+
+section .do-me .do-inner:hover {
+    background-color: rgb(20, 132, 0);
+    color:white;
+}
+
+section .do-me .do-inner:hover i{
+    color: white;
+}
+
+.bg{
+    background:url(https://a-z-animals.com/media/animals/images/original/cockatoo.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 650px;
+}
+
+/*portfolio*/
+
+section .portfolio::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+section.portfolio .portfolio-inner{
+    width: 25%;
+    margin-right: 5%;
+    padding:1rem 1rem 1.5rem 1rem;
+    float: left;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    margin-bottom: 3rem;
+}
+
+section.portfolio .portfolio-inner:nth-child(3n){
+    margin-right: 0;
+}
+
+section.portfolio .portfolio-inner img{
+    width: 100%;
+    display: block;
+}
+
+section.portfolio .portfolio-inner strong{
+    color:#7dbe92;
+    margin: 0.5rem 0;
+    display: block;
+}
+
+section.portfolio .portfolio-inner h3{
+    font-size: 1.75rem;
+}
+
+section.portfolio .portfolio-inner:hover{
+    background-color: rgb(20, 132, 0);
+    color:white;
+}
+
+/*contact with me*/
+section.contact .contact-me::after{
+    content: "";
+    display:block;
+    clear:both;
+}
+section.contact .contact-me .left{
+    width: 27%;
+    float: left;
+}
+section.contact .contact-me .right{
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+}
+section.contact .contact-me .left .card{
+    border:1px solid #ccc;
+    padding:1rem;
+    display:flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+section.contact .contact-me .left .card .icon i{
+    font-size: 2rem;
+    margin-right: 5px;
+}
+section.contact .contact-me .right{
+    float:left;
+    width: 65%;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+    border:1px solid #ccc;
+    padding:1rem;   
+}
+/*form-group 사이 간격 지정*/
+section.contact .contact-me .right .form-group{
+    margin-bottom:1.25rem;   
+}
+/*label 태크가 인라인성격이어서 외부여백을 주기위해 block로 변경*/
+section.contact .contact-me .right .form-group label{
+    display:block;
+    margin-bottom:0.85rem;   
+}
+/*input 요소 꾸미기*/
+section.contact .contact-me .right .form-group input{
+    padding:0.625rem;
+    width:98%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+}
+/*:focus 입력요소 커서가 활성화되면 파란테두리 그림자 효과*/
+section.contact .contact-me .right .form-group input:focus{
+    border:1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;   
+}
+/*textarea 요소 꾸미기*/
+section.contact .contact-me .right .form-group textarea{
+    height: 300px;
+    width:100%;
+    resize: none;
+    border:1px solid #ccc;
+    border-radius: 10px;  
+}
+/*파란테두리 그림자 효과*/
+section.contact .contact-me .right .form-group textarea:focus{
+    outline:none;
+    border:1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;   
+}
+/*button 요소 꾸미기*/
+section.contact .contact-me .right button{
+    width: 100%;
+    padding:1rem;
+    background-color: #f78b00;
+    border:none;
+    color:white;   
+}
+
+/**/
+
+@media screen and (max-width:992px){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:576px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:400px){
+    html{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:1140px){
+    main .container{
+        width: 992px;
+    }
+    section .container{
+        width: 600px;
+    }
+}
+@media screen and (max-width:1140px){
+    section .about-self .left{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    section .about-self .right{
+        width: 100%;
+        padding:0;
+    }
+}
+
+@media screen and (max-width:1140px){
+    section .do-me .do-inner{
+        width: 48%;
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+    }
+    section .do-me .do-inner:nth-child(2n+1){
+        margin-right: 4%;
+    }
+}
+
+@media screen and (max-width:1140px){
+    section .portfolio-me .portfolio-inner{
+        width: 48%;
+        margin-right: 0;
+    }
+    section  .portfolio-me .portfolio-inner:nth-child(2n+1){
+        margin-right: 4%;
+    }
+}
+/**/
+
+header.active{
+    background-color:rgba(red, green, blue, alpha);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
