@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    background-image: url("./bg-11-full.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.container{
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-top: 10px solid blanchedalmond;
+    border-bottom: 10px solid blanchedalmond;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.task-input{
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;
+    width: 80%;
+    border: none;
+    border: 1px solid blanchedalmond;
+}
+
+.task-area{
+    border:1px solid lightgrey;
+}
+
+.task-tabs{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+
+.task-tabs div{
+    padding:1em;
+}
+#tab-underline {
+    height:2px;
+    width: 65px;
+    background-color:rgb(141, 205, 150);
+    position: absolute;
+    left: 0px;
+    padding: 8px;
+    top: 40px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding:1em;
+}
+
+.task-done{
+    text-decoration: line-through;
+}
+
+.task-tabs div{
+    cursor: pointer;
+}
